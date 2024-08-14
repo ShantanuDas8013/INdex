@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male" required> Male
+                        <input type="radio" id="female" name="gender" value="female" required> Female
+                    </div>
+                    <div>
+                        <label for="hobbies">Hobbies:</label>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading"> Reading
+                        <input type="checkbox" id="traveling" name="hobbies" value="traveling"> Traveling
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    flex: 1 1 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+a:hover {
+    color: red;
+}
+input:focus {
+    border-color: blue;
+}
+button:active {
+    background-color: green;
+}
+.grid-item:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
